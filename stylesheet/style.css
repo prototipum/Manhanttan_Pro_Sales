@@ -44,7 +44,7 @@ text-decoration: underline;
 }
 .banner_section {
 height: 867px;
-background: url('img_src/banner/banner.jpg') no-repeat center center;
+background: url('../img_src/banner/banner.jpg') no-repeat center center;
 background-size: cover;
 padding: 0 180px;
 }
@@ -99,7 +99,7 @@ margin-right: 15px;
 width: 18px;
 height: 18px;
 vertical-align: middle;
-background: url("img_src/misc/1025.svg");
+background: url("../img_src/misc/1025.svg");
 }
 .dt_therm {
 color: #C9A15B;
