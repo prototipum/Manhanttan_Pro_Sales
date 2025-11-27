@@ -1,0 +1,12 @@
+{
+  "Gradient text": {
+    "prefix": "gradtext",
+    "body": [
+      "background: linear-gradient(90deg, #161616 0%, #D47A36 100%);",
+      "background-clip: text;",
+      "-webkit-background-clip: text;",
+      "-webkit-text-fill-color: transparent;"
+    ],
+    "description": "Snippet para aplicar gradiente em texto (use com background-clip: text)."
+  }
+}
