@@ -77,6 +77,27 @@ grid-template-columns: 1fr 1fr;
 margin-bottom: 157px;
 gap: 1rem;
 }
+.specs {
+display: grid;
+padding: 0 180px;
+grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+justify-content: space-between;
+margin-bottom: 139px;
+}
+.spec {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.box {
+width: 260px;
+height: 260px;
+background-color: #16202B;
+display: flex;
+align-items: center;
+border-radius: 3px;
+justify-content: center;
+}
 .about {
 padding: 0 180px;
 }
@@ -92,7 +113,15 @@ margin-top: 139px;
 max-width: 1078px;
 padding-bottom: 159px;
 }
-.dt_therm::before {
+.title_spec {
+color: #C9A15B;
+font-size: 2.5;
+font-family: "Oswald", "Helvetica", sans-serif;
+line-height: 1.2;
+font-weight: 700;
+margin-top: 16px;
+}
+.title_spec::before {
 display: inline-block;
 content: '';
 margin-right: 15px;
@@ -193,6 +222,19 @@ margin-top: 38px;
 padding-bottom: 133px;
 color: #EEE;
 }
+.button {
+background: #C9A15B;
+color: #000;
+border: none;
+padding: 10px 20px;
+font-size: 1.2rem;
+font-weight: 700;
+cursor: pointer;
+font-family: "Open Sans", "Helvetica", sans-serif;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 3px;
+margin-top: 24px;
+}
 @media screen and (max-width: 557px) {
 /* small phones */
     html {
@@ -249,6 +291,13 @@ color: #EEE;
     margin-bottom: 28px;
     font-weight: 700;
     }
+    .specs {
+    justify-content: center;
+    padding-left: 7px;
+    grid-template-columns: 1fr;
+    padding-right: 7px;
+    gap: 3rem;
+    }
 }
 @media screen and (max-width: 768px) and (min-width: 557px) {
 /* normal phones */
@@ -280,6 +329,12 @@ color: #EEE;
     .left_div_main {
     margin-bottom: 157px;
     }
+    .specs {
+    padding-left: 9px;
+    padding-right: 9px;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 /* screen landscape mobile*/
@@ -305,6 +360,12 @@ color: #EEE;
     .main_price {
     margin-left: 16px;
     margin-right: 16px;
+    }
+    .specs {
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
@@ -332,6 +393,10 @@ color: #EEE;
     margin-left: 20px;
     margin-right: 20px;
     }
+    .specs {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
 }
 @media screen and (min-width: 1366px) and (max-width: 1920px) {
 /* common desktops */
@@ -342,6 +407,6 @@ color: #EEE;
 @media screen and (min-width: 1920px) {
 /* above full hd screens */
     html {
-    font-size: 18.1px;
+    font-size: 16px;
     }
 }
