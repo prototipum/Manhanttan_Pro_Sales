@@ -60,6 +60,17 @@ height: 867px;
 background: url('../img_src/banner/banner.jpg') no-repeat center center;
 background-size: cover;
 padding: 0 180px;
+background-attachment: fixed;
+}
+.sticky {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+height: 80px;
+opacity: .5;
+animation: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .banner_text {
 padding-top: 218px;
