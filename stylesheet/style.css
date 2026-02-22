@@ -53,7 +53,7 @@ padding: 0 12px;
 .logo {
 display: flex;
 align-items: center;
-gap: 16px;
+gap: 12px;
 }
 .banner_section {
 height: 867px;
@@ -76,6 +76,9 @@ animation: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 padding-top: 218px;
 max-width: 683px;
 }
+/* .after_logo {
+align-self: flex-end;
+} */
 .banner_title {
 font-family: "Anton", "Oswald", "Open Sans", sans-serif;
 font-weight: 400;
@@ -111,7 +114,7 @@ margin-bottom: 139px;
 .spec {
 display: flex;
 flex-direction: column;
-align-items: center;
+/* align-items: center; */
 }
 .box {
 width: 260px;
@@ -235,6 +238,11 @@ font-size: 1rem;
 font-family: "Oswald", "Helvetica", sans-serif;
 font-size: 1.125rem;
 font-weight: 700;
+}
+.div_from_label {
+display: flex;
+justify-content: flex-start;
+align-items: center;
 }
 .bottom_content_footer {
 display: flex;
