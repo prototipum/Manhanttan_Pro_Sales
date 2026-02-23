@@ -125,6 +125,10 @@ align-items: center;
 border-radius: 3px;
 justify-content: center;
 }
+.spec:hover {
+transform: scale(0.9);
+transition: transform 0.3s ease;
+}
 .about {
 padding: 0 180px;
 }
