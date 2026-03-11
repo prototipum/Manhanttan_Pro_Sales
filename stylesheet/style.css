@@ -348,6 +348,9 @@ font-weight: 700;
     .copy_logo {
     display: none;
     }
+    .spec {
+    align-items: center;
+    }
 }
 @media screen and (max-width: 768px) and (min-width: 557px) {
 /* normal phones */
@@ -393,6 +396,9 @@ font-weight: 700;
     }
     .contact_title {
     max-width: 319px;
+    }
+    .spec {
+    align-items: center;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
