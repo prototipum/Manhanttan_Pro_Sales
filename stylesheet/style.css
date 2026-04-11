@@ -63,6 +63,9 @@ background: url('../img_src/banner/banner.jpg') no-repeat center center;
 background-size: cover;
 padding: 0 180px;
 background-attachment: fixed;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 .sticky {
 position: fixed;
