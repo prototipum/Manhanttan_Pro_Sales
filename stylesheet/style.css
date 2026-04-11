@@ -272,9 +272,15 @@ font-size: 1.2rem;
 font-weight: 700;
 cursor: pointer;
 font-family: "Open Sans", "Helvetica", sans-serif;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 border-radius: 3px;
 margin-top: 24px;
+box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
+transition: box-shadow 1s ease;
+}
+.active_button_color {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: box-shadow 0.3s ease;
 }
 .author_name {
 font-family: "Open Sans", sans-serif;

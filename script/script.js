@@ -33,3 +33,12 @@ function moveGradient() {
 	}, 10);
 };
 moveGradient();
+function toggleButtonColor() {
+	const button = document.querySelector(".button");
+	let active = false;
+	setInterval(() => {
+		button.classList.toggle("active_button_color", active);
+		active = !active;
+	}, 1000);
+};
+toggleButtonColor();
