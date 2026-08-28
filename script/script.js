@@ -1,44 +1,44 @@
-const text = "A Manhattan Pro Sales gera conversas qualificadas e leads prontos para o seu time comercial por meio de prospecção ativa via WhatsApp. Operação humana, segmentada e focada em empresários e decisores que realmente importam.";
-function writeText(text) {
-	const element = document.querySelector(".banner_p");
-	element.textContent = "";
-	let i = 0;
-	const interval = setInterval(() => {
-		if (i < text.length) {
-			element.textContent += text.charAt(i);
-			i++;
-		} else {
-			clearInterval(interval);
-		}
-	}, 40);
+const content = document.querySelector(".steps_section");
+function slideToScreen(content) {
+  content.classList.add("slide_to_right");
 }
-writeText(text);
-const header = document.querySelector(".header");
-function stickyHeader(header) {
-	window.addEventListener("scroll", () => {
-		if (window.scrollY > 0) {
-			header.classList.add("sticky");
-		} else {
-			header.classList.remove("sticky");
-		}
-	});
+window.addEventListener("scroll", () => {
+  const contentViewed = content.getBoundingClientRect().top;
+  if (contentViewed < window.innerHeight) {
+    slideToScreen(content);
+  }
+});
+const text = "Prospecção de verdade\!\nAqui acontece!";
+let index = 0;
+function writeContent(text) {
+  const elementText = document.querySelector(".h1_hero");
+  const interval = setInterval(() => {
+    elementText.textContent += text[index];
+    index++;
+    if (index >= text.length) {
+      clearInterval(interval);
+    }
+  }, 80);
 }
-stickyHeader(header);
-function moveGradient() {
-	const footer = document.querySelector(".footer");
-	let angle = 0;
-	setInterval(() => {
-		angle = (angle + 1) % 360; // reinicia automaticamente
-		footer.style.background = `linear-gradient(${angle}deg, #131E2A 0%, #000000 100%)`;
-	}, 10);
-};
-moveGradient();
-function toggleButtonColor() {
-	const button = document.querySelector(".button");
-	let active = false;
-	setInterval(() => {
-		button.classList.toggle("active_button_color", active);
-		active = !active;
-	}, 1000);
-};
-toggleButtonColor();
+writeContent(text);
+addEventListener("scroll", () => {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 90) {
+    header.classList.add("sticky_header");
+  } else {
+    header.classList.remove("sticky_header");
+  }
+});
+function growBar() {
+    const bar = document.querySelector(".bar");
+        function updateBar() {
+            const scrollY = window.scrollY;
+            const pageHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrollY / pageHeight) * 100;
+            bar.style.width = `${progress}%`;
+    }
+    window.addEventListener("scroll", updateBar);
+    updateBar();
+}
+growBar();
